@@ -1,0 +1,45 @@
+body{
+    background-color: floralwhite;
+    text-align: center;
+}
+
+#camara, #resultado{
+    border: 5px dotted #d054e0;
+    width: 350px;
+    height: 300px;
+    box-sizing: content-box;
+}
+
+h2, label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#ins{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#f{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 222, 37);
+}
+
+#t{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cornflowerblue;
+}
+
+#e{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(202, 19, 19);
+}
+
+.btn{
+    color: #d054e0;
+    border-color: #d054e0;
+    font-family: fantasy;
+}

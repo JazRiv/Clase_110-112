@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de emojis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="icons8-fireworks-100.png" type="image/x-icon">
+</head>
+
+<body>
+<div class="container">
+    <h2 class="btn-info">Buscador de Emojis
+        <br>
+    <span>&#128512</span>
+    <span>😂🤣😁😍👍👌🎶😎.</span>
+    </h2>
+    <p id="ins">Toma tu foto para generar un emoji adecuado</p>
+    <h3 id="f">¿Estas feliz?</h3>
+    <h3 id="t">¿Estas triste?</h3>
+    <h3 id="e">¿Estas enojado?</h3>
+
+    <div class="col-lg-4">
+        <label>Vista de la camara:</label>
+        <div id="camara"></div>
+        <br>
+        <button class="btn" onclick="tomar_foto()">Sacar foto</button>
+    </div>
+    <div class="col-lg-4">
+        <label>Prediccion 1:</label>
+        <p id="emocion_1"></p>
+        <p id="emoji_1"></p>
+        <label>Prediccion 2:</label>
+        <p id="emocion_2"></p>
+        <p id="emoji_2"></p>
+    </div>
+    <div class="col-lg-4">
+        <label>Tu foto:</label>
+        <div id="resultado"></div>
+        <br>
+        <button class="btn" onclick="resultado_boton()">Predecir emocion</button>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
